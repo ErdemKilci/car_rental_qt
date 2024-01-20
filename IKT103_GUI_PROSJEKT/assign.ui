@@ -1,0 +1,614 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>assign</class>
+ <widget class="QWidget" name="assign">
+  <property name="enabled">
+   <bool>true</bool>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>975</width>
+    <height>725</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">
+QWidget {
+    background-color: #F5E3CB;
+}
+</string>
+  </property>
+  <widget class="QPushButton" name="pushButtonAssignCarToCustomer">
+   <property name="geometry">
+    <rect>
+     <x>480</x>
+     <y>660</y>
+     <width>191</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton {
+
+font: 300 12pt &quot;Bahnschrift Light SemiCondensed&quot;;
+color: #344B61;
+    border: 2px solid #F57B56; 
+    border-radius: 5px;
+
+}
+
+QPushButton:hover {
+    background-color: #344B61; 
+    color: #ffffff; 
+
+}
+
+
+</string>
+   </property>
+   <property name="text">
+    <string>Assign Car to Customer</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButtonUnassignAgreement">
+   <property name="geometry">
+    <rect>
+     <x>760</x>
+     <y>550</y>
+     <width>171</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton {
+
+font: 300 12pt &quot;Bahnschrift Light SemiCondensed&quot;;
+color: #344B61;
+    border: 2px solid #F57B56; 
+    border-radius: 5px;
+
+}
+
+QPushButton:hover {
+    background-color: #344B61; 
+    color: #ffffff; 
+}
+
+
+</string>
+   </property>
+   <property name="text">
+    <string>Unassign Agreement</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="labelResultAssign">
+   <property name="geometry">
+    <rect>
+     <x>350</x>
+     <y>380</y>
+     <width>251</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="labelRentalAgreement">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>440</y>
+     <width>151</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 300 12pt &quot;Bahnschrift Light SemiCondensed&quot;;
+color: rgb(50, 50, 50);
+</string>
+   </property>
+   <property name="text">
+    <string>Rental Agreements</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="labelCarTable">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>120</y>
+     <width>41</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 300 12pt &quot;Bahnschrift Light SemiCondensed&quot;;
+color: rgb(50, 50, 50);
+</string>
+   </property>
+   <property name="text">
+    <string>Cars</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="labelSearchCustomerTable">
+   <property name="geometry">
+    <rect>
+     <x>510</x>
+     <y>120</y>
+     <width>91</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 300 12pt &quot;Bahnschrift Light SemiCondensed&quot;;
+color: rgb(50, 50, 50);
+</string>
+   </property>
+   <property name="text">
+    <string>Customers</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButtonRefreshCarTable">
+   <property name="geometry">
+    <rect>
+     <x>330</x>
+     <y>110</y>
+     <width>121</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton {
+
+font: 300 12pt &quot;Bahnschrift Light SemiCondensed&quot;;
+color: #344B61;
+    border: 2px solid #F57B56; 
+    border-radius: 5px;
+
+}
+
+QPushButton:hover {
+    background-color: #344B61; 
+    color: #ffffff; 
+
+}
+
+
+</string>
+   </property>
+   <property name="text">
+    <string>Refresh Table</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButtonRefreshCustomerTable">
+   <property name="geometry">
+    <rect>
+     <x>820</x>
+     <y>110</y>
+     <width>121</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton {
+
+font: 300 12pt &quot;Bahnschrift Light SemiCondensed&quot;;
+color: #344B61;
+    border: 2px solid #F57B56; 
+    border-radius: 5px;
+
+}
+
+QPushButton:hover {
+    background-color: #344B61; 
+    color: #ffffff; 
+
+}
+
+
+</string>
+   </property>
+   <property name="text">
+    <string>Refresh Table</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>470</x>
+     <y>440</y>
+     <width>201</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 300 12pt &quot;Bahnschrift Light SemiCondensed&quot;;
+color: rgb(50, 50, 50);
+</string>
+   </property>
+   <property name="text">
+    <string>Assign a Car to Customer</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_3">
+   <property name="geometry">
+    <rect>
+     <x>760</x>
+     <y>440</y>
+     <width>71</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 300 12pt &quot;Bahnschrift Light SemiCondensed&quot;;
+color: rgb(50, 50, 50);
+</string>
+   </property>
+   <property name="text">
+    <string>Unassign</string>
+   </property>
+  </widget>
+  <widget class="QTableView" name="tableViewSearchCar">
+   <property name="geometry">
+    <rect>
+     <x>35</x>
+     <y>150</y>
+     <width>421</width>
+     <height>192</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QTableView {
+    background-color: transparent;
+    gridline-color: #b5b5b5; 
+}
+
+QTableView::item {
+    border: 1px solid #b5b5b5; 
+}
+
+QHeaderView::section {
+    background-color: transparent;
+}
+</string>
+   </property>
+  </widget>
+  <widget class="QTableView" name="tableViewSearchCustomer">
+   <property name="geometry">
+    <rect>
+     <x>515</x>
+     <y>150</y>
+     <width>431</width>
+     <height>192</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QTableView {
+    background-color: transparent;
+    gridline-color: #b5b5b5; 
+}
+
+QTableView::item {
+    border: 1px solid #b5b5b5; 
+}
+
+QHeaderView::section {
+    background-color: transparent;
+}
+</string>
+   </property>
+  </widget>
+  <widget class="QTableView" name="tableViewAssign">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>490</y>
+     <width>371</width>
+     <height>192</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QTableView {
+    background-color: transparent;
+    gridline-color: #b5b5b5; 
+}
+
+QTableView::item {
+    border: 1px solid #b5b5b5; 
+}
+
+QHeaderView::section {
+    background-color: transparent;
+}
+</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="labelSearchCustomer">
+   <property name="geometry">
+    <rect>
+     <x>504</x>
+     <y>21</y>
+     <width>108</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 300 12pt &quot;Bahnschrift Light SemiCondensed&quot;;
+color: rgb(50, 50, 50);
+</string>
+   </property>
+   <property name="text">
+    <string>Search Customer</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="labelSearchCar">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>20</y>
+     <width>91</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 300 12pt &quot;Bahnschrift Light SemiCondensed&quot;;
+color: rgb(50, 50, 50);
+
+</string>
+   </property>
+   <property name="text">
+    <string>Search Car</string>
+   </property>
+  </widget>
+  <widget class="QWidget" name="layoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>460</x>
+     <y>500</y>
+     <width>104</width>
+     <height>121</height>
+    </rect>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="QLabel" name="labelAssignCarId">
+      <property name="styleSheet">
+       <string notr="true">font: 300 12pt &quot;Bahnschrift Light SemiCondensed&quot;;
+color: rgb(50, 50, 50);
+</string>
+      </property>
+      <property name="text">
+       <string>Car Id: </string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="labelAssignCustomerId">
+      <property name="styleSheet">
+       <string notr="true">font: 300 12pt &quot;Bahnschrift Light SemiCondensed&quot;;
+color: rgb(50, 50, 50);
+</string>
+      </property>
+      <property name="text">
+       <string>Customer Id: </string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="labelRentStarts">
+      <property name="styleSheet">
+       <string notr="true">font: 300 12pt &quot;Bahnschrift Light SemiCondensed&quot;;
+color: rgb(50, 50, 50);
+</string>
+      </property>
+      <property name="text">
+       <string>Rent Starts:</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="labelRentEnds">
+      <property name="styleSheet">
+       <string notr="true">font: 300 12pt &quot;Bahnschrift Light SemiCondensed&quot;;
+color: rgb(50, 50, 50);
+</string>
+      </property>
+      <property name="text">
+       <string>Rent Ends: </string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QWidget" name="layoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>570</x>
+     <y>500</y>
+     <width>135</width>
+     <height>121</height>
+    </rect>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout_2">
+    <item>
+     <widget class="QLineEdit" name="lineEditAssignCarId">
+      <property name="styleSheet">
+       <string notr="true">QLineEdit { background-color: transparent; }</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLineEdit" name="lineEditAssignCustomerId">
+      <property name="styleSheet">
+       <string notr="true">QLineEdit { background-color: transparent; }</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QDateEdit" name="dateEditRentStarts">
+      <property name="styleSheet">
+       <string notr="true">QLineEdit { background-color: transparent; }</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QDateEdit" name="dateEditRentEnds">
+      <property name="styleSheet">
+       <string notr="true">QLineEdit { background-color: transparent; }</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QWidget" name="layoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>761</x>
+     <y>510</y>
+     <width>171</width>
+     <height>28</height>
+    </rect>
+   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout">
+    <item>
+     <widget class="QLabel" name="label">
+      <property name="styleSheet">
+       <string notr="true">font: 300 12pt &quot;Bahnschrift Light SemiCondensed&quot;;
+color: rgb(50, 50, 50);
+</string>
+      </property>
+      <property name="text">
+       <string>Rent Id: </string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLineEdit" name="lineEditRentId">
+      <property name="styleSheet">
+       <string notr="true">QLineEdit { background-color: transparent; }</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QWidget" name="layoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>512</x>
+     <y>60</y>
+     <width>431</width>
+     <height>28</height>
+    </rect>
+   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout_2">
+    <item>
+     <widget class="QLabel" name="labelSearchCustomerName">
+      <property name="styleSheet">
+       <string notr="true">font: 300 12pt &quot;Bahnschrift Light SemiCondensed&quot;;
+color: rgb(50, 50, 50);
+</string>
+      </property>
+      <property name="text">
+       <string>Customer Name: </string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLineEdit" name="lineEditSearchCustomerName">
+      <property name="styleSheet">
+       <string notr="true">QLineEdit { background-color: transparent; }</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="pushButtonSearchCustomer">
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+
+font: 300 12pt &quot;Bahnschrift Light SemiCondensed&quot;;
+color: #344B61;
+    border: 2px solid #F57B56; 
+    border-radius: 5px;
+
+}
+
+QPushButton:hover {
+    background-color: #344B61; 
+    color: #ffffff; 
+}
+
+
+</string>
+      </property>
+      <property name="text">
+       <string>Search Customer</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QWidget" name="layoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>31</x>
+     <y>61</y>
+     <width>421</width>
+     <height>28</height>
+    </rect>
+   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout_3">
+    <item>
+     <widget class="QLabel" name="labelRegistrationNumber">
+      <property name="styleSheet">
+       <string notr="true">font: 300 12pt &quot;Bahnschrift Light SemiCondensed&quot;;
+color: rgb(50, 50, 50);
+</string>
+      </property>
+      <property name="text">
+       <string>Registration Number: </string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLineEdit" name="lineEditSearchRegistrationNumber">
+      <property name="styleSheet">
+       <string notr="true">QLineEdit { background-color: transparent; }</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="pushButtonSearchCar">
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+
+font: 300 12pt &quot;Bahnschrift Light SemiCondensed&quot;;
+color: #344B61;
+    border: 2px solid #F57B56; 
+    border-radius: 5px;
+
+}
+
+QPushButton:hover {
+    background-color: #344B61; 
+    color: #ffffff; 
+}
+
+
+</string>
+      </property>
+      <property name="text">
+       <string>Search Car</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

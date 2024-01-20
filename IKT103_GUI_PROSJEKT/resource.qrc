@@ -1,0 +1,9 @@
+<RCC>
+    <qresource prefix="/bilder">
+        <file>paper.png</file>
+        <file>customer.png</file>
+        <file>sedan.png</file>
+        <file>animation.mp4</file>
+        <file>opening.png</file>
+    </qresource>
+</RCC>
